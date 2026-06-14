@@ -144,6 +144,7 @@ namespace Catch {
 #    if defined( _MSC_VER )
                 std::remove( m_buffer );
 #    endif
+                (void) m_buffer;
             }
 
             std::FILE* getFile() { return m_file; }
